@@ -1,0 +1,64 @@
+<!-- voting.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vote for Your Candidate</h1>
+    <img src="images/Voting.png" alt="Voting Image" width="400">
+    <form id="voteForm">
+        <label for="phone">Enter your phone number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <h3>Select a candidate:</h3>
+        <input type="radio" name="candidate" value="Candidate A"> Candidate A<br>
+        <input type="radio" name="candidate" value="Candidate B"> Candidate B<br>
+        <input type="radio" name="candidate" value="Candidate C"> Candidate C<br>
+        <input type="radio" name="candidate" value="Candidate D"> Candidate D<br>
+        <button type="submit">Vote</button>
+    </form>
+    <p id="message"></p>
+    <a href="results.html">View Results</a>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Voting Results</h1>
+    <table>
+        <tr>
+            <th>Candidate</th>
+            <th>Votes</th>
+        </tr>
+        <tr>
+            <td>Candidate A</td>
+            <td id="votesA">0</td>
+        </tr>
+        <tr>
+            <td>Candidate B</td>
+            <td id="votesB">0</td>
+        </tr>
+        <tr>
+            <td>Candidate C</td>
+            <td id="votesC">0</td>
+        </tr>
+        <tr>
+            <td>Candidate D</td>
+            <td id="votesD">0</td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
